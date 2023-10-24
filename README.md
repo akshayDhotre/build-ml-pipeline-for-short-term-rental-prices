@@ -1,35 +1,42 @@
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
-You are working for a property management company renting rooms and properties for short periods of 
+We are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
 on the price of similar properties. Your company receives new data in bulk every week. The model needs 
 to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
 In this project you will build such a pipeline.
 
+## Project Links
+- [Weights & Biases Project](#https://wandb.ai/a2dhotre/nyc_airbnb?workspace=user-a2dhotre)
+- [Github Repository Link](#https://github.com/akshayDhotre/build-ml-pipeline-for-short-term-rental-prices)
+
 ## Table of contents
 
-- [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
-- [Preliminary steps](#preliminary-steps)
-  * [Fork the Starter Kit](#fork-the-starter-kit)
-  * [Create environment](#create-environment)
-  * [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
-  * [Cookie cutter](#cookie-cutter)
-  * [The configuration](#the-configuration)
-  * [Running the entire pipeline or just a selection of steps](#Running-the-entire-pipeline-or-just-a-selection-of-steps)
-  * [Pre-existing components](#pre-existing-components)
-- [Instructions](#instructions)
-  * [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-  * [Data cleaning](#data-cleaning)
-  * [Data testing](#data-testing)
-  * [Data splitting](#data-splitting)
-  * [Train Random Forest](#train-random-forest)
-  * [Optimize hyperparameters](#optimize-hyperparameters)
-  * [Select the best model](#select-the-best-model)
-  * [Test](#test)
-  * [Visualize the pipeline](#visualize-the-pipeline)
-  * [Release the pipeline](#release-the-pipeline)
-  * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
-- [Cleaning up](#cleaning-up)
+- [Build an ML Pipeline for Short-Term Rental Prices in NYC](#build-an-ml-pipeline-for-short-term-rental-prices-in-nyc)
+  - [Project Links](#project-links)
+  - [Table of contents](#table-of-contents)
+  - [Preliminary steps](#preliminary-steps)
+    - [Fork the Starter kit](#fork-the-starter-kit)
+    - [Create environment](#create-environment)
+    - [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
+    - [Cookie cutter](#cookie-cutter)
+    - [The configuration](#the-configuration)
+    - [Running the entire pipeline or just a selection of steps](#running-the-entire-pipeline-or-just-a-selection-of-steps)
+    - [Pre-existing components](#pre-existing-components)
+  - [In case of errors](#in-case-of-errors)
+  - [Instructions](#instructions)
+    - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+  - [Data cleaning](#data-cleaning)
+    - [Data testing](#data-testing)
+    - [Data splitting](#data-splitting)
+    - [Train Random Forest](#train-random-forest)
+    - [Optimize hyperparameters](#optimize-hyperparameters)
+    - [Select the best model](#select-the-best-model)
+    - [Test](#test)
+    - [Visualize the pipeline](#visualize-the-pipeline)
+    - [Release the pipeline](#release-the-pipeline)
+    - [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
+  - [License](#license)
 
 ## Preliminary steps
 ### Fork the Starter kit
