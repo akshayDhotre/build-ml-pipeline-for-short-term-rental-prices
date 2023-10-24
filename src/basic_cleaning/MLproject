@@ -6,28 +6,28 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: ## ADD DESCRIPTION
+        description: Fully qualified name for the artifact
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: Name for the W&B artifact that will be created
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: Type of the artifact to create
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: Description for the artifact
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: Minimum price for cleaning outliers
+        type: float
 
       max_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: Maximum price for cleaning outliers
+        type: float
 
 
     command: >-
