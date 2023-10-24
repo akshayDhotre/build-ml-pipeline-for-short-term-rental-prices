@@ -37,6 +37,10 @@ def go(args):
     logger.info("Converting last_review to datetime values")
     artifact_df.last_review = pd.to_datetime(artifact_df.last_review)
 
+    # dropping rows that re not in proper geolocation 
+    longitude_idx = artifact_df['longitude'].between(-74.25, -73.50) & artifact_df['latitude'].between(40.5, 41.2)
+    artifact_df = artifact_df[longitude_idx].copy()
+
     # save cleaned dataset
     logger.info("Saving the output artifact")
     file_name = "clean_sample.csv"
